@@ -223,35 +223,23 @@
                         <p>
                             If adding a command to the settings file, it goes under the <code>html_panel</code> setting. These configurations will appear under the <code>Export to HTML: Show Export Menu</code> command palette command.
                         </p>
-                        <div class="highlight">
-                            <pre>
-                                <span></span>
-                                <code>
-                                    <span class=c1>// Define configurations for the drop down export menu</span>
-                                    <span class=s2>&quot;html_panel&quot;</span><span class=o>:</span>
-                                    <span class=p>[</span>
-                                    <span class=c1>// Browser print color (selections and multi-selections allowed)</span>
-                                    <span class=p>{</span>
-                                    <span class=s2>&quot;Browser Print - Color&quot;</span><span class=o>:</span>
-                                    <span class=p>{</span>
-                                    <span class=s2>&quot;numbers&quot;</span><span class=o>:</span>
-                                    <span class=kc>true</span><span class=p>,</span>
-                                    <span class=s2>&quot;wrap&quot;</span><span class=o>:</span>
-                                    <span class=mi>900</span><span class=p>,</span>
-                                    <span class=s2>&quot;browser_print&quot;</span><span class=o>:</span>
-                                    <span class=kc>true</span><span class=p>,</span>
-                                    <span class=s2>&quot;multi_select&quot;</span><span class=o>:</span>
-                                    <span class=kc>true</span><span class=p>,</span>
-                                    <span class=s2>&quot;color_scheme&quot;</span><span class=o>:</span>
-                                    <span class=s2>&quot;Packages/ExportHtml/ColorSchemes/Print Color.sublime-color-scheme&quot;</span><span class=p>,</span>
-                                    <span class=s2>&quot;style_gutter&quot;</span><span class=o>:</span>
-                                    <span class=kc>false</span>
-                                    <span class=p>}</span>
-                                    <span class=p>}</span>
-                                    <span class=p>]</span>
-                                </code>
-                            </pre>
-                        </div>
+<div class="highlight">
+<pre><span></span><code tabindex="0"><span class="c1">// Define configurations for the drop down export menu</span>
+<span class="s2">"html_panel"</span><span class="o">:</span> <span class="p">[</span>
+    <span class="c1">// Browser print color (selections and multi-selections allowed)</span>
+    <span class="p">{</span>
+        <span class="s2">"Browser Print - Color"</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">"numbers"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="s2">"wrap"</span><span class="o">:</span> <span class="mi">900</span><span class="p">,</span>
+            <span class="s2">"browser_print"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="s2">"multi_select"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="s2">"color_scheme"</span><span class="o">:</span> <span class="s2">"Packages/ExportHtml/ColorSchemes/Print Color.sublime-color-scheme"</span><span class="p">,</span>
+            <span class="s2">"style_gutter"</span><span class="o">:</span> <span class="kc">false</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+ <span class="p">]</span>
+</code></pre>
+</div>
                         <p>The name of the command is the key value, and then you add the parameters you wish to specify. You can use any combination of settings below.</p>
                         <table>
                             <thead>
@@ -361,34 +349,21 @@
                         </table>
                         <p>If you wish to bind a command to a key combination etc., the same settings as above can be used.</p>
                         <p>Example:</p>
-                        <div class="highlight">
-                            <pre>
-                                <span></span>
-                                <code>
-                                    <span class=p>{</span>
-                                    <span class="s2">&quot;keys&quot;</span><span class="o">:</span>
-                                    <span class="p">[</span><span class="s2">&quot;ctrl+alt+n&quot;</span><span class="p">],</span>
-                                    <span class="s2">&quot;command&quot;</span><span class="o">:</span>
-                                    <span class="s2">&quot;export_html&quot;</span><span class="p">,</span>
-                                    <span class="s2">&quot;args&quot;</span><span class="o">:</span>
-                                    <span class="p">{</span>
-                                    <span class="s2">&quot;numbers&quot;</span><span class="o">:</span>
-                                    <span class="kc">true</span><span class="p">,</span>
-                                    <span class="s2">&quot;wrap&quot;</span><span class="o">:</span>
-                                    <span class="mi">900</span><span class="p">,</span>
-                                    <span class="s2">&quot;browser_print&quot;</span><span class="o">:</span>
-                                    <span class="kc">true</span><span class="p">,</span>
-                                    <span class="s2">&quot;multi_select&quot;</span><span class="o">:</span>
-                                    <span class="kc">true</span><span class="p">,</span>
-                                    <span class="s2">&quot;color_scheme&quot;</span><span class="o">:</span>
-                                    <span class="s2">&quot;Packages/ExportHtml/ColorSchemes/Print Color.sublime-color-scheme&quot;</span><span class="p">,</span>
-                                    <span class="s2">&quot;style_gutter&quot;</span><span class="o">:</span>
-                                    <span class="kc">false</span>
-                                    <span class="p">}</span>
-                                    <span class="p">}</span>
-                                </code>
-                            </pre>
-                        </div>
+<div class="highlight">
+<pre><span></span><code tabindex="0"><span class="p">{</span>
+    <span class="s2">"keys"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"ctrl+alt+n"</span><span class="p">],</span>
+    <span class="s2">"command"</span><span class="o">:</span> <span class="s2">"export_html"</span><span class="p">,</span>
+    <span class="s2">"args"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"numbers"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="s2">"wrap"</span><span class="o">:</span> <span class="mi">900</span><span class="p">,</span>
+        <span class="s2">"browser_print"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="s2">"multi_select"</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="s2">"color_scheme"</span><span class="o">:</span> <span class="s2">"Packages/ExportHtml/ColorSchemes/Print Color.sublime-color-scheme"</span><span class="p">,</span>
+        <span class="s2">"style_gutter"</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
                         <p>
                             When viewing the HTML in your web browser, regardless of the gutter settings, the gutter can be toggled to show or be hidden using the toolbar in the upper right corner of the page.
                         </p>
@@ -399,26 +374,18 @@
                         <p>
                             If adding a command to the settings file, it goes under the <code>bbcode_panel</code> setting. These configurations will appear under the <code>Export to BBCode: Show Export Menu</code> command palette command.
                         </p>
-                        <div class="highlight">
-                            <pre>
-                                <span></span>
-                                <code>
-                                    <span class="c1">// Define configurations for the drop down export menu</span>
-                                    <span class="s2">&quot;bbcode_panel&quot;</span><span class="o">:</span>
-                                    <span class="p">[</span>
-                                    <span class="p">{</span>
-                                    <span class="s2">&quot;To Clipboard - Format as BBCode&quot;</span><span class="o">:</span>
-                                    <span class="p">{</span>
-                                    <span class="s2">&quot;numbers&quot;</span><span class="o">:</span>
-                                    <span class="kc">false</span><span class="p">,</span>
-                                    <span class="s2">&quot;multi_select&quot;</span><span class="o">:</span>
-                                    <span class="kc">true</span>
-                                    <span class="p">}</span>
-                                    <span class="p">}</span>
-                                    <span class="p">]</span>
-                                </code>
-                            </pre>
-                        </div>
+<div class="highlight">
+<pre><span></span><code><span class="c1">// Define configurations for the drop down export menu</span>
+<span class="s2">"bbcode_panel"</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">"To Clipboard - Format as BBCode"</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">"numbers"</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="s2">"multi_select"</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</code></pre>
+</div>
                         <p>The name of the command is the key value, and then you add the parameters you wish to specify. You can use any combination of settings below.</p>
                         <table>
                             <thead>
@@ -468,26 +435,17 @@
                         </table>
                         <p>If you wish to bind a command to a key combination etc., the same settings as above can be used.</p>
                         <p>Example:</p>
-                        <div class="highlight">
-                            <pre>
-                                <span></span>
-                                <code>
-                                    <span class="p">{</span>
-                                    <span class="s2">&quot;keys&quot;</span><span class="o">:</span>
-                                    <span class="p">[</span><span class="s2">&quot;ctrl+alt+n&quot;</span><span class="p">],</span>
-                                    <span class="s2">&quot;command&quot;</span><span class="o">:</span>
-                                    <span class="s2">&quot;export_bbcode&quot;</span><span class="p">,</span>
-                                    <span class="s2">&quot;args&quot;</span><span class="o">:</span>
-                                    <span class="p">{</span>
-                                    <span class="s2">&quot;numbers&quot;</span><span class="o">:</span>
-                                    <span class="kc">false</span><span class="p">,</span>
-                                    <span class="s2">&quot;multi_select&quot;</span><span class="o">:</span>
-                                    <span class="kc">true</span>
-                                    <span class="p">}</span>
-                                    <span class="p">}</span>
-                                </code>
-                            </pre>
-                        </div>
+<div class="highlight">
+<pre><span></span><code><span class="p">{</span>
+    <span class="s2">"keys"</span><span class="o">:</span> <span class="p">[</span><span class="s2">"ctrl+alt+n"</span><span class="p">],</span>
+    <span class="s2">"command"</span><span class="o">:</span> <span class="s2">"export_bbcode"</span><span class="p">,</span>
+    <span class="s2">"args"</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">"numbers"</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="s2">"multi_select"</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
                         <h2 id="annotations-html-only">Annotations (HTML only)<a class="headerlink" href="#annotations-html-only" title="Permanent link"></a></h2>
                         <p>
                             Annotations are comments you can make on selected text. When the HTML is generated, the selected text will be underlined, and when the mouse hovers over them, a tooltip will appear with your comment.
